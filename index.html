@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/main.css">
+        <script src="libs/angularjs/angular.min.js"></script>
+        <script src="libs/angularjs/angular-resource.min.js"></script>
+        <script src="js/app.js"></script>
+    </head>
+    <body>
+        <div ng-app="photoApp" ng-controller="PhotoAppController">
+            <div class="title">
+                Upcoming Movies
+            </div>
+            <div>
+                <ul class="photos">
+                    <li ng-repeat="photo in photos">
+                        <img ng-src="{{photo.posters.profile}}" />
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
